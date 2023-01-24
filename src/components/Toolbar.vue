@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted } from "@vue/runtime-core";
+import { onMounted } from "vue";
 import { ref } from 'vue';
 
   defineProps({
@@ -9,12 +9,7 @@ import { ref } from 'vue';
     },
   });
 
-  const vLocation = location.pathname;
-  let vHome = ref(false);
-  let vPR = ref(false);
-  let vCT = ref(false);
-  let vSTTT = ref(false);
-  let vA = ref(false);
+  let vHome = ref(false), vPR = ref(false), vCT = ref(false), vSTTT = ref(false), vA = ref(false);
 
   onMounted(() => {
     setActivePage(location.pathname);
@@ -121,7 +116,6 @@ import { ref } from 'vue';
         </div>
       </div>
 		</nav>
-    <router-view></router-view>
 </template>
 
 

@@ -1,9 +1,8 @@
 <script setup>
-  import Toolbar from "./Toolbar.vue";
   import Banner from "./Banner.vue";
   import { onMounted, onUnmounted } from 'vue';
                     
-  onMounted(() => {
+  /*onMounted(() => {
     window.addEventListener("resize", this.resizeIFrame);
   });
   onUnmounted(() => {
@@ -15,7 +14,7 @@
     document.getElementsByClassName("responsive-iframe").height = pParam[0].contentRect.height
   })
 
-  resizeIFrame.observe(document.body)
+  resizeIFrame.observe(document.body)*/
 </script>
                      
                      
